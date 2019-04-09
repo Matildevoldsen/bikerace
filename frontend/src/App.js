@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Style.css';
 
 class App extends Component {
   componentDidMount() {
