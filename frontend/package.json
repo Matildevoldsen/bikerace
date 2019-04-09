@@ -10,7 +10,11 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "redux": "^4.0.1",
-    "env-cmd": "^8.0.2"
+    "env-cmd": "^8.0.2",
+    "@fortawesome/fontawesome-svg-core": "1.2.0",
+    "@fortawesome/free-solid-svg-icons": "5.1.0",
+    "@fortawesome/free-regular-svg-icons": "5.1.0",
+    "@fortawesome/react-fontawesome": "0.1.0"
   },
   "scripts": {
     "start": "env-cmd .env.development react-scripts start",

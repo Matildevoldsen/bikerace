@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Style.css';
+import Navbar from "./Components/Navbar/Navbar";
 
 class App extends Component {
   componentDidMount() {
@@ -9,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
+        <Navbar/>
       </div>
     );
   }
