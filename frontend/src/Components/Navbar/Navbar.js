@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBars} from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-router-dom';
 import './Navbar.css';
+import Item from "./Item/Item";
 
 export default class Navbar extends Component {
     constructor(e) {
@@ -24,9 +25,10 @@ export default class Navbar extends Component {
             <nav className="navbar" id="nav">
                 <Link className="nav--logo" to="/">{process.env.REACT_APP_NAME}</Link>
                 <ul className={this.state.isVisible ? 'navbar--container' : 'navbar--container navbar--hidden'}>
-                    <li className="nav--item">
-                        <Link to="/" onClick={this.onItemClick}> Home</Link>
-                    </li>
+                    <Item toPath="/">Home</Item>
+                    <Item toPath="/photos"><span className="hashtag">#</span>Photos</Item>
+                    <Item toPath="/track">Track Bikers</Item>
+                    <Item toPath="/slogan">Suggest Slogan</Item>
                 </ul>
 
                 <a href="#" className="navbar--collapse" onClick={this.onItemClick}>
